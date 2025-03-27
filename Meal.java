@@ -2,7 +2,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-class Meal implements Serializable {
+public class Meal implements Serializable {
     private static final long serialVersionUID = 1L;
     
     private String name;
