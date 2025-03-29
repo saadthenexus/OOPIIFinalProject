@@ -39,10 +39,5 @@ class InputHelper {
     public static String getString(String prompt) {
         System.out.print(prompt);
         return scanner.nextLine();
-    }
-    
-    // Expose the Scanner if needed
-    public static Scanner getScanner() {
-        return scanner;
-    }
+    }   
 }
