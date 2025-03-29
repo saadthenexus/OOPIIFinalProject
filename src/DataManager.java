@@ -9,7 +9,7 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DataManager {
+class DataManager {
     private static final String BASE_FOLDER = "classInfo";
 
     // Utility method to get full file path and ensure the directory exists
