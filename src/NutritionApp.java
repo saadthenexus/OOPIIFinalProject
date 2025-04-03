@@ -88,13 +88,12 @@ public class NutritionApp {
     }
     
     private void calculateBMIAndBMR() {
-        String name = InputHelper.getString("Enter your name: ");
         double weight = InputHelper.getDouble("Enter your weight in kg: ");
         double height = InputHelper.getDouble("Enter your height in cm: ");
         int age = InputHelper.getInt("Enter your age: ");
         String gender = InputHelper.getString("Enter your gender (male/female): ");
         try {
-            User user = new User(name, weight, height, age, gender);
+            User user = new User(weight, height, age, gender);
             System.out.println("Health Insights: " + user.getHealthInsight());
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());

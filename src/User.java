@@ -11,14 +11,12 @@ public class User implements Serializable {
     private static final int MALE_OFFSET = 5;
     private static final int FEMALE_OFFSET = -161;
     
-    private String name;
     private double weight; // kg
     private double height; // cm
     private int age;
     private String gender; // "male" or "female"
 
-    public User(String name, double weight, double height, int age, String gender) {
-        this.name = name;
+    public User(double weight, double height, int age, String gender) {
         this.weight = weight;
         this.height = height;
         this.age = age;
